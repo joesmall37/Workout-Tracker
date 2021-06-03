@@ -3,7 +3,7 @@ const Workout = require("../models/workout.js")
 module.exports = function (app) {
 
     app.get("/api/workouts", function (req, res) {
-        Workout.find()
+        Workout.find({})
             .then(data => {
                 res.json(data)
             })
@@ -33,4 +33,14 @@ module.exports = function (app) {
                 res.json(err)
             })
     });
+    app.get(`/api/workouts/range`, (req,res) => {
+        Workout.find({}).limit(7).then(data => {
+            return res.json(data);
+        })
+            .catch(err => {
+                return res.json(err)
+            })
+    });
+
+
 }

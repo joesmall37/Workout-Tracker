@@ -1,20 +1,20 @@
-// Dependencies
+//  set up dependencies
 const express = require("express");
 const morgan = require("morgan");
 const mongoose = require("mongoose");
 
-// Setting up Express App
+// set up express
 const app = express();
 const PORT = process.env.PORT || 8000;
 
 app.use(morgan("dev"));
 
-// Sets up the Express app to handle data parsing
+// set up express app and static files
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
 
-// db mongo
+// set up mongo database
 var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/workout";
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
@@ -24,11 +24,11 @@ mongoose.connect(MONGODB_URI, {
 
 })
 
-// Creating Routes
+// create routes
 require("./routes/apiRoutes")(app);
 require("./routes/htmlRoutes")(app);
 
-// Starts the server to begin listening
+// start server
 app.listen(PORT, function () {
   console.log(`App listening on Port ${PORT}!`);
 });
