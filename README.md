@@ -1,10 +1,3 @@
-
-- As a user, I want to be able to view create and track daily workouts.
-- I want to be able to log multiple exercises in  workout on a given day. 
-- I should also be able to track the name, type, weight, sets, reps, and duration of exercise. 
-- If the exercise is a cardio exercise, I should be able to track my distance traveled.
-
-
 # Workout-Tracker
 ## Table of Contents:
 * [Title](#Workout-Tracker)
@@ -20,7 +13,7 @@
 * [Email](#Email)
 
 ## Installation 
-- Mongooese depenecy was installed for the application
+- Mongooese was installed for the application
 
 ## Usage
 
