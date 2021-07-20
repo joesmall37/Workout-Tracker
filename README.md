@@ -13,7 +13,7 @@
 * [Email](#Email)
 
 ## Installation 
-- Mongooese was installed for the application
+- Mongoose was installed for the application
 
 ## Usage
 
