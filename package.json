@@ -1,20 +1,28 @@
 {
-  "name": "mongoose_skeleton",
+  "name": "Workout-Tracker",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeders/seed.js"
+    "start": "nodemon server.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joesmall37/Workout-Tracker.git"
+  },
+  "keywords": [],
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joesmall37/Workout-Tracker/issues"
+  },
+  "homepage": "https://github.com/joesmall37/Workout-Tracker#readme",
   "dependencies": {
     "express": "^4.16.3",
     "mongoose": "^5.3.16",
     "morgan": "^1.9.1",
+    "nodemon": "^2.0.12",
     "router": "^1.3.5"
   }
 }
